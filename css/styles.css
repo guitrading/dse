@@ -1,0 +1,137 @@
+:root {
+    --dsc-color-bg-primary: #f7f7f7;       /* Light grayish background */
+    --dsc-color-bg-secondary: #003366;     /* Dark blue background */
+    --dsc-color-bg-tertiary: #0066cc;      /* Calm blue background */
+
+    --dsc-color-card-primary: #ffffff;     /* White card background */
+    --dsc-color-card-secondary: #dddddd;   /* Light gray card border */
+    --dsc-color-card-tertiary: #0066cc;    /* Highlight color for card */
+    --dsc-color-card-border: #dddddd;      /* Light gray card border */
+    --dsc-color-card-bg: #ffffff;          /* White card background */
+
+    --dsc-color-btn-primary: #0066cc;      /* Primary button color (calm blue) */
+    --dsc-color-btn-inverse: #ffffff;      /* Inverse button color (white) */
+
+    --dsc-color-font-primary: #333333;     /* Dark gray font color */
+    --dsc-color-font-secondary: #003366;   /* Dark blue font color */
+    --dsc-color-font-tertiary: #0066cc;
+    --dsc-color-font-quaternary: #ffffff;
+    --dsc-color-font-nav-heading: #ffffff;
+}
+
+/*--------------------------------------------------------*/
+/*Generic Styling*/
+/*--------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+html, body {
+    background-color: var(--dsc-color-bg-primary);
+}
+
+
+.dsc-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------------*/
+/* Header Styles */
+/*-------------------------------------------------------------------------*/
+
+header {
+    background-color: var(--dsc-color-bg-secondary);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    color: var(--dsc-color-font-nav-heading);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*-------------------------------------*/
+/*Card Styles*/
+/*-------------------------------------*/
+
+.dsc-card {
+
+    border-radius: 5px;
+    border: 1px solid var(--dsc-color-card-border);
+    background-color: var(--dsc-color-card-bg);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dsc-line-bottom {
+    border-bottom: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+
+/*-------------------------------------*/
+/*Button Styles*/
+/*-------------------------------------*/
+
+.dsc-btn {
+    border-radius: 4px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003366;
+    color: var(--dsc-color-btn-primary);
+}
+
+.dsc-btn-blue {
+    background-color: var(--dsc-color-btn-primary);
+    color: var(--dsc-color-btn-inverse);
+}
+
+.dsc-btn-white {
+    background-color: var(--dsc-color-btn-primary);
+    color: var(--dsc-color-btn-inverse);
+    border: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-btn-page-container {
+    width: 220px;
+    display: grid;
+    grid-gap: 20px;
+}
+/*.cart-total-container {*/
+/*    display: flex;*/
+/*        justify-content: space-between;*/
+/*        align-items: center;*/
+/*        padding: 10px 20px;*/
+/*        background-color: #f7f7f7;*/
+/*        border-top: 1px solid #ddd;*/
+/*}*/
