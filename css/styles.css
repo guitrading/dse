@@ -39,6 +39,10 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+main {
+    padding: 0 20px;
+}
+
 
 .dsc-container {
     width: 100%;
@@ -55,6 +59,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
 }
 
 nav {
@@ -99,6 +104,19 @@ nav h1 {
 /*Button Styles*/
 /*-------------------------------------*/
 
+
+.dsc-btn-page-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+}
+/*Min-width: 576+ aplica esse estilo*/
+@media (min-width: 576px) {
+    .dsc-btn-page-container {
+        width: 220px;
+    }
+}
+
 .dsc-btn {
     border-radius: 4px;
     height: 42px;
@@ -122,11 +140,6 @@ nav h1 {
     border: 1px solid var(--dsc-color-card-border);
 }
 
-.dsc-btn-page-container {
-    width: 220px;
-    display: grid;
-    grid-gap: 20px;
-}
 /*.cart-total-container {*/
 /*    display: flex;*/
 /*        justify-content: space-between;*/
