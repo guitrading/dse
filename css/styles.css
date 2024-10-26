@@ -100,6 +100,10 @@ nav h1 {
     margin-bottom: 20px;
 }
 
+.dsc-mt20 {
+    margin-top: 20px;
+}
+
 /*-------------------------------------*/
 /*Button Styles*/
 /*-------------------------------------*/
@@ -138,6 +142,67 @@ nav h1 {
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
     border: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-btn-next-page {
+    border: 1px solid var(--dsc-color-btn-primary);
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--dsc-color-btn-primary);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*----------------------------*/
+/*Search bar styles*/
+/*--------------------------*/
+
+.dsc-search-bar {
+    height: 40px;
+    display: flex;
+    color: var(--dsc-color-font-primary);
+
+}
+
+.dsc-search-bar button, .dsc-search-bar input {
+    border: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-search-bar input {
+    width: calc(100% - 80px);
+    border-left: none;
+    border-right: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.dsc-search-bar input:focus {
+    outline: none;
+}
+
+.dsc-search-bar input::placeholder {
+    color: var(--dsc-color-font-secondary);
+}
+
+.dsc-search-bar button {
+    width: 40px;
+}
+
+.dsc-search-bar button[type='submit'] {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.dsc-search-bar button[type='reset'] {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.dsc-search-bar button[type='input'] {
+    border-left: none;
+    border-right: none;
 }
 
 /*.cart-total-container {*/
